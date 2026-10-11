@@ -30,19 +30,13 @@
 <script>
 // DEMO SETTINGS: before launch, add your WhatsApp number with country code, digits only (India example: 91XXXXXXXXXX).
 const STORE={name:'VAYRA Fragrances',whatsappNumber:'',currency:'INR'};
-const productsData=[
-{id:1,name:'Citrus Day Eau de Parfum',category:'Men',price:249,mrp:399,notes:'Citrus · Bergamot · Clean musk',tone:'blue',shape:'',badge:'Everyday pick',mark:'VAYRA\nCITRUS'},
-{id:2,name:'Soft Bloom Floral Mist',category:'Women',price:199,mrp:299,notes:'Rose · Peony · Soft vanilla',tone:'rose',shape:'mist',badge:'Light & fresh',mark:'VAYRA\nBLOOM'},
-{id:3,name:'Amber Woods Perfume',category:'Unisex',price:499,mrp:699,notes:'Amber · Sandalwood · Warm spice',tone:'dark',shape:'',badge:'Warm & woody',mark:'VAYRA\nAMBER'},
-{id:4,name:'Classic Roll-On Attar',category:'Attar',price:149,mrp:229,notes:'Musk · Woods · Long-lasting style',tone:'',shape:'attar',badge:'Budget find',mark:'VAYRA\nATTAR'},
-{id:5,name:'Fresh Aqua Spray',category:'Men',price:349,mrp:499,notes:'Marine · Lime · Fresh woods',tone:'blue',shape:'',badge:'Fresh notes',mark:'VAYRA\nAQUA'},
-{id:6,name:'Vanilla Cloud Body Mist',category:'Body Mist',price:229,mrp:349,notes:'Vanilla · Coconut · Creamy musk',tone:'rose',shape:'mist',badge:'Feel-good mist',mark:'VAYRA\nVANILLA'},
-{id:7,name:'White Musk Daily Perfume',category:'Unisex',price:599,mrp:799,notes:'White musk · Linen · Powder',tone:'green',shape:'',badge:'Easy everyday',mark:'VAYRA\nMUSK'},
-{id:8,name:'Royal Oud Attar',category:'Attar',price:299,mrp:449,notes:'Oud · Resin · Spices',tone:'dark',shape:'attar',badge:'Rich & classic',mark:'VAYRA\nOUD'},
-{id:9,name:'Petal & Peony EDP',category:'Women',price:699,mrp:999,notes:'Peony · Jasmine · Soft woods',tone:'rose',shape:'',badge:'Floral favourite',mark:'VAYRA\nPETAL'},
-{id:10,name:'Midnight Spice Perfume',category:'Men',price:899,mrp:1199,notes:'Pepper · Tonka · Dark woods',tone:'dark',shape:'',badge:'Evening scent',mark:'VAYRA\nMIDNIGHT'},
-{id:11,name:'Green Tea Body Mist',category:'Body Mist',price:179,mrp:249,notes:'Green tea · Citrus · Fresh leaves',tone:'green',shape:'mist',badge:'Under ₹299',mark:'VAYRA\nGREEN TEA'},
-{id:12,name:'Signature Oud Reserve',category:'Unisex',price:1299,mrp:1699,notes:'Oud · Saffron · Smooth amber',tone:'dark',shape:'',badge:'Premium edit',mark:'VAYRA\nRESERVE'}
+const productsData = [
+  {id:1,name:'Citrus Day Eau de Parfum',category:'Men',price:249,mrp:399,notes:'Citrus · Bergamot · Clean musk',tone:'blue',shape:'',badge:'Everyday pick',mark:'VAYRA\nCITRUS'},
+  {id:2,name:'Soft Bloom Floral Mist',category:'Women',price:199,mrp:299,notes:'Rose · Peony · Soft vanilla',tone:'rose',shape:'mist',badge:'Light & fresh',mark:'VAYRA\nBLOOM'},
+  {id:3,name:'Amber Woods Perfume',category:'Unisex',price:499,mrp:699,notes:'Amber · Sandalwood · Warm spice',tone:'dark',shape:'',badge:'Warm & woody',mark:'VAYRA\nAMBER'},
+  {id:4,name:'Classic Roll-On Attar',category:'Attar',price:149,mrp:229,notes:'Musk · Woods · Rich aroma',tone:'',shape:'attar',badge:'Budget find',mark:'VAYRA\nATTAR'},
+  {id:5,name:'Fresh Aqua Spray',category:'Men',price:349,mrp:499,notes:'Marine · Lime · Fresh woods',tone:'blue',shape:'',badge:'Fresh notes',mark:'VAYRA\nAQUA'},
+  {id:6,name:'Vanilla Cloud Body Mist',category:'Body Mist',price:229,mrp:349,notes:'Vanilla · Coconut · Creamy musk',tone:'rose',shape:'mist',badge:'Feel-good mist',mark:'VAYRA\nVANILLA'}
 ];
 let cart={},currentCategory='All',searchText='',priceRange='all',sortMode='featured',lastOrderText='';
 const fmt=n=>'₹'+Number(n).toLocaleString('en-IN');
